@@ -1,0 +1,55 @@
+.contact {
+  background: #0A192F;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #64FFDA;
+}
+
+.contact-text {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #ccd6f6;
+  line-height: 1.6;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #64FFDA;
+  color: #0A192F;
+}
+
+.btn-primary:hover {
+  background: #52d8b6;
+}
+
+.btn-secondary {
+  border: 2px solid #64FFDA;
+  color: #64FFDA;
+}
+
+.btn-secondary:hover {
+  background: rgba(100, 255, 218, 0.15);
+}
