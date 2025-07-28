@@ -14,6 +14,7 @@
   font-size: 1.4rem;
   font-weight: bold;
   color: white;
+  text-decoration: none;  /* ✅ Remove underline */
 }
 
 .nav-links {
@@ -46,16 +47,20 @@
   margin: 4px;
 }
 
+/* --- MOBILE VIEW --- */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
     background: #0A192F;
-    position: absolute;
-    top: 60px;
-    right: 0;
+    position: fixed;                /* Fill the screen */
+    top: 60px;                      /* Below the navbar */
+    left: 0;
     width: 100%;
-    padding: 1rem;
+    height: calc(100vh - 60px);     /* Take full viewport height */
+    padding: 1.5rem;
+    overflow-y: auto;               /* Allow scroll if links overflow */
+    gap: 1.2rem;
   }
 
   .nav-links.open {

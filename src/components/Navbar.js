@@ -6,14 +6,19 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="logo">Rasika Shirude</h1>
+      {/* Logo links to Hero section */}
+      <a href="#home" className="logo" onClick={() => setIsOpen(false)}>
+        Rasika Shirude
+      </a>
 
+      {/* Hamburger menu */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
 
+      {/* Menu links */}
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
         <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
