@@ -1,94 +1,70 @@
 .experience {
-  background: #ffffff;
+  background: #f8f9fa;
   padding: 4rem 2rem;
-}
-
-.section-title {
-  font-size: 2rem;
   text-align: center;
-  margin-bottom: 3rem;
-  color: #0A192F;
 }
 
-.timeline {
-  position: relative;
-  max-width: 900px;
+.experience-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0A66C2; /* Deep blue heading */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: #64FFDA;
+.experience-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-.timeline-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 2.5rem;
-  position: relative;
+.experience-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-dot {
-  width: 16px;
-  height: 16px;
-  background: #64FFDA;
-  border-radius: 50%;
-  position: relative;
-  left: 12px;
-  top: 5px;
-}
-
-.timeline-content {
-  margin-left: 50px;
-  background: #f8f9fa;
-  padding: 1.2rem;
-  border-radius: 6px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-  width: 100%;
-}
-
-.timeline-content h3 {
-  font-size: 1.2rem;
+.experience-card h3 {
+  color: #0A66C2;
+  font-size: 1.3rem;
   margin-bottom: 0.3rem;
-  color: #0A192F;
 }
 
-.timeline-content h4 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #555;
+.experience-card h4 {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
 }
 
-.duration {
+.experience-card .duration {
   display: block;
+  color: #666;
   font-size: 0.9rem;
-  color: #64FFDA;
   margin-bottom: 0.8rem;
 }
 
-.timeline-content ul {
+.experience-card ul {
   padding-left: 1.2rem;
 }
 
-.timeline-content ul li {
+.experience-card ul li {
   font-size: 0.95rem;
-  margin-bottom: 0.5rem;
   color: #444;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px) {
-  .timeline::before {
-    left: 10px;
-  }
-  .timeline-dot {
-    left: 2px;
-  }
-  .timeline-content {
-    margin-left: 40px;
+  .experience-container {
+    gap: 1.5rem;
   }
 }

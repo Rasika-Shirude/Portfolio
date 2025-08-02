@@ -4,11 +4,14 @@
   text-align: center;
 }
 
-.section-title {
+.projects-title {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #0A192F;
+  color: #0A66C2; /* Deep blue */
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
 
 .projects-grid {
   display: grid;
@@ -26,6 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: box-shadow 0.3s ease;
 }
 
 .project-card img {
@@ -39,7 +43,7 @@
 }
 
 .project-card .tech {
-  color: #64FFDA;
+  color: #0A66C2; /* Deep blue for tech stack */
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
@@ -48,6 +52,7 @@
   color: #444;
   font-size: 0.95rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .project-buttons a {
@@ -60,20 +65,23 @@
   transition: background 0.3s ease;
 }
 
+/* Primary Button */
 .project-buttons .btn-primary {
-  background: #64FFDA;
-  color: #0A192F;
+  background: #0A66C2;
+  color: white;
 }
 
 .project-buttons .btn-primary:hover {
-  background: #52d8b6;
+  background: #084C99; /* Darker deep blue */
 }
 
+/* Secondary Button */
 .project-buttons .btn-secondary {
-  border: 2px solid #64FFDA;
-  color: #64FFDA;
+  border: 2px solid #0A66C2;
+  color: #0A66C2;
 }
 
 .project-buttons .btn-secondary:hover {
-  background: rgba(100, 255, 218, 0.1);
+  background: #0A66C2;
+  color: white;
 }

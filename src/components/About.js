@@ -4,24 +4,22 @@ import "./About.css";
 const About = () => {
   return (
     <section id="about" className="about">
+      <h2 className="about-title">About Me</h2>
       <div className="about-container">
-       
 
-        {/* About Content */}
         <div className="about-content">
-          <h2 className="section-title">About Me</h2>
           <p>
-            I'm <strong>Rasika Shirude</strong>, a Frontend Developer with 3+ years of experience 
-            building scalable and pixel-perfect web applications. I specialize in 
-            <strong> React.js, Redux, JavaScript, Kubernetes, and CI/CD pipelines</strong>.
+            Hi, I'm <strong>Rasika Shirude</strong>, a passionate Frontend Developer
+            with 3+ years of experience building pixel-perfect, scalable, and
+            high-performing web applications. I enjoy creating clean UI designs,
+            writing maintainable code, and collaborating with teams to deliver
+            impactful solutions.
           </p>
           <p>
-            I thrive in agile environments, enjoy solving real-world challenges, 
-            and love creating intuitive user interfaces that make a difference.
-          </p>
-          <p>
-            Outside of coding, I enjoy learning new tech stacks and contributing 
-            to projects that enhance user experiences.
+            My expertise includes <strong>React.js</strong>, <strong>Redux</strong>,
+            <strong> JavaScript (ES6+)</strong>, <strong>CSS3</strong>, and
+            <strong> Docker/Kubernetes</strong>. I'm always eager to learn
+            emerging technologies and contribute to projects that challenge me.
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import "./WorkExperience.css";
 
 const WorkExperience = () => {
   const experiences = [
-     {
+    {
       company: "Infosys Ltd, Pune",
       position: "Senior Systems Engineer - HDFC Bank",
       duration: "2023 – Present",
@@ -22,27 +22,22 @@ const WorkExperience = () => {
         "Collaborated with cross-functional teams to deliver scalable and responsive UI using React.js, Redux, and modern CSS."
       ],
     },
-   
-   
   ];
 
   return (
     <section id="experience" className="experience">
-      <h2 className="section-title">Work Experience</h2>
-      <div className="timeline">
+      <h2 className="experience-title">Work Experience</h2>
+      <div className="experience-container">
         {experiences.map((exp, idx) => (
-          <div className="timeline-item" key={idx}>
-            <div className="timeline-dot" />
-            <div className="timeline-content">
-              <h3>{exp.company}</h3>
-              <h4>{exp.position}</h4>
-              <span className="duration">{exp.duration}</span>
-              <ul>
-                {exp.details.map((detail, i) => (
-                  <li key={i}>{detail}</li>
-                ))}
-              </ul>
-            </div>
+          <div className="experience-card" key={idx}>
+            <h3>{exp.company}</h3>
+            <h4>{exp.position}</h4>
+            <span className="duration">{exp.duration}</span>
+            <ul>
+              {exp.details.map((detail, i) => (
+                <li key={i}>{detail}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
